@@ -41,7 +41,10 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 # We could directly create vectors for variables in our dataset.
 
 # Create a vector with all the data points for Gorilla 1; Name this vector gor1 .
+<<<<<<< HEAD
 gor1 <- c(37, 123, 20, 178, 21, 17.5, 6.5, 22)
+=======
+>>>>>>> 5b583367e7ceb929ce090df278fde04ac1145cca
 
 
 # Print gor1 in the Console below. Do you see the data you just entered?
@@ -60,10 +63,17 @@ bone.dat <- read.csv(file.choose())
 # Then I would press Enter and choose my .csv file from the pop-up window.
 
 # Your turn! Import the PlushieData.csv into R. Call this dataset plush.dat .
+<<<<<<< HEAD
 plush.dat <- read.csv(file.choose())
 
 # Print plush.dat into the Console below. You should now see your data in the Console, and see plush.dat in the Environment tab to the right. How many variables do you see?
 8
+=======
+
+
+# Print plush.dat into the Console below. You should now see your data in the Console, and see plush.dat in the Environment tab to the right. How many variables do you see?
+
+>>>>>>> 5b583367e7ceb929ce090df278fde04ac1145cca
 
 
 # Now that we have our data in R, we can start to play with it.
@@ -77,6 +87,7 @@ plush.dat <- read.csv(file.choose())
 mean(plush.dat$Flexion)
 # Answer: 43.25 degrees
 
+<<<<<<< HEAD
 mean(plush.dat$Flexion) = 43.25
 mean(plush.dat$Extension) = 138.25
 mean(plush.dat$Adduction) = 21.25
@@ -85,11 +96,16 @@ mean(plush.dat$PelvicBreadth) = 20.75
 mean(plush.dat$MidthighCircumference) = 17.75
 mean(plush.dat$ThighLength) = 7.875
 mean(plush.dat$DistanceBetweenKnees) = 25.75
+=======
+
+
+>>>>>>> 5b583367e7ceb929ce090df278fde04ac1145cca
 
 # Median: To calculate the median of a variable, we use the function median() .
 
 # Calculate the medians for each of the 8 variables in plush.dat. Make sure to write down both your code and the answers below:
 
+<<<<<<< HEAD
 median(plush.dat$Flexion) = 44
 median(plush.dat$Extension) = 137.5
 median(plush.dat$Adduction) = 20
@@ -98,6 +114,9 @@ median(plush.dat$PelvicBreadth) = 21
 median(plush.dat$MidthighCircumference) = 17.75
 median(plush.dat$ThighLength) = 8
 median(plush.dat$DistanceBetweenKnees) = 26
+=======
+
+>>>>>>> 5b583367e7ceb929ce090df278fde04ac1145cca
 
 # Range: To calculate the range of a variable, we have to do a little bit more work. We use the min() and max() functions to calculate the minimum and maximum values in the dataset. Then, we subtract the min from the max.
 
@@ -107,6 +126,7 @@ range.flex <- max(plush.dat$Flexion) - min(plush.dat$Flexion)
 range.flex
 #Answer: 11 degrees
 
+<<<<<<< HEAD
 range.ext <- max(plush.dat$Extension) - min(plush.dat$Extension) = 32
 range.ext
 
@@ -118,81 +138,59 @@ range.abd
 
 range.pe <- max(plush.dat$PelvicBreadth) - min(plush.dat$PelvicBreadth) = 1
 range.pe
+=======
+
+>>>>>>> 5b583367e7ceb929ce090df278fde04ac1145cca
 
 # Interquartile Range: To calculate the IQR of a variable, we use the function IQR() .
 
 # Calculate the IQR for each of the 8 variables in plush.dat. Make sure to write down both your code and the answers below:
 
-IQR(Flexion)
-IQR(Extension)
+<<<<<<< HEAD
+IQR(plush.dat$Flexion) = 8.75
+IQR(plush.dat$Extension) = 29.75
+IQR(plush.dat$Adduction) = 1.25
+IQR(plush.dat$Abduction) = 0.75
+IQR(plush.dat$PelvicBreadth) = 0.25
+IQR(plush.dat$MidthighCircumference) = 0.5
+IQR(plush.dat$ThighLength) = 2.125
+IQR(plush.dat$DistanceBetweenKnees) = 6.25
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+=======
+>>>>>>> 5b583367e7ceb929ce090df278fde04ac1145cca
 
 # Variance: To calculate the variance of a variable, we use the function var() .
 
 # Calculate the variances for each of the 8 variables in plush.dat. Make sure to write down both your code and the answers below:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var(plush.dat$Flexion) = 31.58333
+var(plush.dat$Extension) = 311.5833
+var(plush.dat$Adduction) = 6.25
+var(plush.dat$Abduction) = 2.25
+var(plush.dat$PelvicBreadth) = 0.25
+var(plush.dat$MidthighCircumference) = 0.08333333
+var(plush.dat$ThighLength) = 1.729167
+var(plush.dat$DistanceBetweenKnees) = 14.25
 
 
 # Standard Deviation: To calculate the SD of a variable, we use the function sd() .
 
 # Calculate the SD for each of the 8 variables in plush.dat. Make sure to write down both your code and the answers below:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+sd(plush.dat$Flexion) = 5.619905
+sd(plush.dat$Extension) = 17.65172
+sd(plush.dat$Adduction) = 2.5
+sd(plush.dat$Abduction) = 1.5
+sd(plush.dat$PelvicBreadth) = 0.5
+sd(plush.dat$MidthighCircumference) = 0.2886751
+sd(plush.dat$ThighLength) = 1.314978
+sd(plush.dat$DistanceBetweenKnees) = 3.774917
 
 
 # Bonus:
 # Can you compile all the means for each variable into vectors?
 
-
-
-
-
+means <- c(mean(plush.dat$Flexion), mean(plush.dat$Extension), mean(plush.dat$Adduction), mean(plush.dat$Abduction), mean(plush.dat$PelvicBreadth), mean(plush.dat$MidthighCircumference), mean(plush.dat$ThighLength), mean(plush.dat$DistanceBetweenKnees))
 
 
 
