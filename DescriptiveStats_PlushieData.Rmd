@@ -193,7 +193,6 @@ sd(plush.dat$DistanceBetweenKnees) = 3.774917
 means <- c(mean(plush.dat$Flexion), mean(plush.dat$Extension), mean(plush.dat$Adduction), mean(plush.dat$Abduction), mean(plush.dat$PelvicBreadth), mean(plush.dat$MidthighCircumference), mean(plush.dat$ThighLength), mean(plush.dat$DistanceBetweenKnees))
 
 
-
 # Can you combine these mean vectors into a matrix? 
 
 
