@@ -65,74 +65,74 @@ rom.dat <- read.csv(file.choose(), row.names = NULL)
 mean(rom.dat$Flexion)
 # Answer: _ degrees
 
-mean(rom.dat$Extension)
+mean.ex <- mean(rom.dat$Extension)
 #Answer: 159.2581 degrees
 
-mean(rom.dat$Flexion)
+mean.fl <- mean(rom.dat$Flexion)
 #Answer: 37.35484 degrees
 
-mean(rom.dat$Abduction)
+mean.ab <- mean(rom.dat$Abduction)
 #Answer: 162.2903 degrees
 
-mean(rom.dat$Adduction)
+mean.ad <- mean(rom.dat$Adduction)
 #Answer: 48.12903 degrees
 
-mean(rom.dat$ThighCircumference)
+mean.tc <- mean(rom.dat$ThighCircumference)
 #Answer: 51.90323 centimeters
 
-mean(rom.dat$ThighLength)
+mean.tl <- mean(rom.dat$ThighLength)
 #Answer: 27.19355 centimeters
 
-mean(rom.dat$BiiliacBreadth, na.rm = TRUE)
+mean.bb <- mean(rom.dat$BiiliacBreadth, na.rm = TRUE)
 #Answer: 39.43333 centimeters
 
-mean(rom.dat$DistanceBetweenKnees, na.rm = TRUE)
+mean.dbk <- mean(rom.dat$DistanceBetweenKnees, na.rm = TRUE)
 #Answer: 70.82609 centimeters 
 
-mean(rom.dat$BiepicondylarBreadth, na.rm = TRUE)
+mean.bib <- mean(rom.dat$BiepicondylarBreadth, na.rm = TRUE)
 #Answer: 8.416667 centimeters
 
-mean(rom.dat$InternalRotation)
+mean.ir <- mean(rom.dat$InternalRotation)
 #Answer: 36.09677 degrees
 
-mean(rom.dat$ExternalRotation)
+mean.er <- mean(rom.dat$ExternalRotation)
 #Answer: 77 degrees
 
 # Median: To calculate the median of a variable, we use the function median() .
 
 # Calculate the medians for each of the variables in rom.dat. Make sure to write down both your code and the answers below:
 
-median(rom.dat$Extension)
+median.ex <- median(rom.dat$Extension)
 #Answer: 157 degrees
 
-median(rom.dat$Flexion)
+median.fl <- median(rom.dat$Flexion)
 #Answer: 38 degrees
 
-median(rom.dat$Abduction)
+median.ab <- median(rom.dat$Abduction)
 #Answer: 161 degrees
 
-median(rom.dat$Adduction)
+median.ad <- median(rom.dat$Adduction)
 #Answer: 48 degrees
 
-median(rom.dat$ThighCircumference)
+median.tc <- median(rom.dat$ThighCircumference)
 #Answer: 53 centimeters
 
-median(rom.dat$ThighLength)
+median.tl <- median(rom.dat$ThighLength)
 #Answer: 28 centimeters
 
-median(rom.dat$BiiliacBreadth, na.rm = TRUE)
+median.bb <- median(rom.dat$BiiliacBreadth, na.rm = TRUE)
 #Answer: 40 centimeters
 
-median(rom.dat$DistanceBetweenKnees, na.rm = TRUE)
+median.dbk <- median(rom.dat$DistanceBetweenKnees, na.rm = TRUE)
 #Answer: 72 centimeters
 
-median(rom.dat$BiepicondylarBreadth, na.rm = TRUE)
+median.bib <- median(rom.dat$BiepicondylarBreadth, na.rm = TRUE)
 #Answer: 8 centimeters
 
-median(rom.dat$InternalRotation)
+median.ir <- median(rom.dat$InternalRotation)
 #Answer: 35 degrees
 
-median(rom.dat$ExternalRotation)
+median.er <- median(rom.dat$ExternalRotation)
 #Answer: 76 degrees
 
 # Range: To calculate the range of a variable, we use the min() and max() functions to calculate the minimum and maximum values in the dataset. Then, we subtract the min from the max.
@@ -143,20 +143,20 @@ range.flex <- max(rom.dat$Flexion) - min(rom.dat$Flexion)
 range.flex
 #Answer: _ degrees
 
-range.ext <- max(rom.dat$Extension) - min(rom.dat$Extension)
-range.ext
+range.ex <- max(rom.dat$Extension) - min(rom.dat$Extension)
+range.ex
 #Answer: 38 degrees
 
-range.flex <- max(rom.dat$Flexion) - min(rom.dat$Flexion)
-range.flex
+range.fl <- max(rom.dat$Flexion) - min(rom.dat$Flexion)
+range.fl
 #Answer: 43 degrees
 
-range.abd <- max(rom.dat$Abduction) - min(rom.dat$Abduction)
-range.abd
+range.ab <- max(rom.dat$Abduction) - min(rom.dat$Abduction)
+range.ab
 #Answer: 20 degrees
 
-range.add <- max(rom.dat$Adduction) - min(rom.dat$Adduction)
-range.add
+range.ad <- max(rom.dat$Adduction) - min(rom.dat$Adduction)
+range.ad
 #Answer: 36 degrees
 
 range.tc <- max(rom.dat$ThighCircumference) - min(rom.dat$ThighCircumference)
@@ -175,135 +175,138 @@ range.dbk <- max(rom.dat$DistanceBetweenKnees, na.rm = TRUE) - min(rom.dat$Dista
 range.dbk
 #Answer: 23 centimeters
 
-range.biep <- max(rom.dat$BiepicondylarBreadth, na.rm = TRUE) - min(rom.dat$BiepicondylarBreadth, na.rm = TRUE)
-range.biep
+range.bib <- max(rom.dat$BiepicondylarBreadth, na.rm = TRUE) - min(rom.dat$BiepicondylarBreadth, na.rm = TRUE)
+range.bib
 #Answer: 9 centimeters
 
 range.int <- max(rom.dat$InternalRotation) - min(rom.dat$InternalRotation)
 range.int
 #Answer: 41 degrees
 
-range.ext <- max(rom.dat$ExternalRotation) - min(rom.dat$ExternalRotation)
-range.ext
+range.ex <- max(rom.dat$ExternalRotation) - min(rom.dat$ExternalRotation)
+range.ex
 #Answer: 48 degrees
 
 # Interquartile Range: To calculate the IQR of a variable, we use the function IQR() .
 
 # Calculate the IQR for each of the variables in rom.dat. Make sure to write down both your code and the answers below:
 
-IQR(rom.dat$Extension)
+IQR.ex <- IQR(rom.dat$Extension)
 #Answer: 12 degrees
 
-IQR(rom.dat$Flexion)
+IQR.fl <- IQR(rom.dat$Flexion)
 #Answer: 15.5 degrees
 
-IQR(rom.dat$Abduction)
+IQR.ab <- IQR(rom.dat$Abduction)
 #Answer: 6.5 degrees
 
-IQR(rom.dat$Adduction)
+IQR. ad <- IQR(rom.dat$Adduction)
 #Answer: 11.5 degrees
 
-IQR(rom.dat$ThighCircumference)
+IQR.tc <- IQR(rom.dat$ThighCircumference)
 #Answer: 12 centimeters
 
-IQR(rom.dat$ThighLength)
+IQR.tl <- IQR(rom.dat$ThighLength)
 #Answer: 2.5 centimeters
 
-IQR(rom.dat$BiiliacBreadth, na.rm = TRUE)
+IQR.bb <- IQR(rom.dat$BiiliacBreadth, na.rm = TRUE)
 #Answer: 9.75 centimeters
 
-IQR(rom.dat$DistanceBetweenKnees, na.rm = TRUE)
+IQR.dbk <- IQR(rom.dat$DistanceBetweenKnees, na.rm = TRUE)
 #Answer: 4 centimeters
 
-IQR(rom.dat$BiepicondylarBreadth, na.rm = TRUE)
+IQR. bib <- IQR(rom.dat$BiepicondylarBreadth, na.rm = TRUE)
 #Answer: 3.75 centimeters
 
-IQR(rom.dat$InternalRotation)
+IQR.ir <- IQR(rom.dat$InternalRotation)
 #Answer: 10 degrees
 
-IQR(rom.dat$ExternalRotation)
+IQR.er <- IQR(rom.dat$ExternalRotation)
 #Answer: 13.5 degrees
 
 # Variance: To calculate the variance of a variable, we use the function var() .
 
 # Calculate the variances for each of the variables in rom.dat. Make sure to write down both your code and the answers below:
 
-var(rom.dat$Extension)
+var.ex <- var(rom.dat$Extension)
 #Answer: 70.99785 degrees
 
-var(rom.dat$Flexion)
+var.fl <- var(rom.dat$Flexion)
 #Answer: 128.1032 degrees
 
-var(rom.dat$Abduction)
+var.ab <- var(rom.dat$Abduction)
 #Answer: 27.6129 degrees
 
-var(rom.dat$Adduction)
+var.ad <- var(rom.dat$Adduction)
 #Answer: 78.3828 degrees
 
-var(rom.dat$ThighCircumference)
+var.tc <- var(rom.dat$ThighCircumference)
 #Answer: 50.47366 centimeters
 
-var(rom.dat$ThighLength)
+var.tl <- var(rom.dat$ThighLength)
 #Answer: 4.027957 centimeters
 
-var(rom.dat$BiiliacBreadth, na.rm = TRUE)
+var.bb <- var(rom.dat$BiiliacBreadth, na.rm = TRUE)
 #Answer: 42.11609 centimeters
 
-var(rom.dat$DistanceBetweenKnees, na.rm = TRUE)
+var.dbk <- var(rom.dat$DistanceBetweenKnees, na.rm = TRUE)
 #Answer: 27.24111 centimeters
 
-var(rom.dat$BiepicondylarBreadth, na.rm = TRUE)
+var.bib <- var(rom.dat$BiepicondylarBreadth, na.rm = TRUE)
 #Answer: 6.173851 centimeters
 
-var(rom.dat$InternalRotation)
+var.ir <- var(rom.dat$InternalRotation)
 #Answer: 83.29032 degrees
 
-var(rom.dat$ExternalRotation)
+var.er <- var(rom.dat$ExternalRotation)
 #Answer: 129.1333 degrees
 
 # Standard Deviation: To calculate the SD of a variable, we use the function sd() .
 
 # Calculate the SD for each of the variables in rom.dat. Make sure to write down both your code and the answers below:
 
-sd(rom.dat$Extension)
+sd.ex <- sd(rom.dat$Extension)
 #Answer: 8.426022 degrees
 
-sd(rom.dat$Flexion)
+sd.fl <- sd(rom.dat$Flexion)
 #Answer: 11.31827 degrees
 
-sd(rom.dat$Abduction)
+sd.ab <- sd(rom.dat$Abduction)
 #Answer: 5.254798 degrees
 
-sd(rom.dat$Adduction)
+sd.ad <- sd(rom.dat$Adduction)
 #Answer: 8.853406 degrees
 
-sd(rom.dat$ThighCircumference)
+sd.tc <- sd(rom.dat$ThighCircumference)
 #Answer: 7.104481 centimeters
 
-sd(rom.dat$ThighLength)
+sd.tl <- sd(rom.dat$ThighLength)
 #Answer: 2.006977 centimeters
 
-sd(rom.dat$BiiliacBreadth, na.rm = TRUE)
+sd.bb <- sd(rom.dat$BiiliacBreadth, na.rm = TRUE)
 #Answer: 6.489691 centimeters
 
-sd(rom.dat$DistanceBetweenKnees, na.rm = TRUE)
+sd.dbk <- sd(rom.dat$DistanceBetweenKnees, na.rm = TRUE)
 #Answer: 5.219301 centimeters
 
-sd(rom.dat$BiepicondylarBreadth, na.rm = TRUE)
+sd.bib <- sd(rom.dat$BiepicondylarBreadth, na.rm = TRUE)
 #Answer: 2.484723 centimeters
 
-sd(rom.dat$InternalRotation)
+sd.ir <- sd(rom.dat$InternalRotation)
 #Answer: 9.126353 degrees
 
-sd(rom.dat$ExternalRotation)
+sd.er <- sd(rom.dat$ExternalRotation)
 #Answer: 11.36368 degrees
 
 # Now, compare your answers with those of the other person using the same dataset as you!
 
 # Together, work to compile the statistics (mean, median, etc.) of each variable (Extension, Flexion, etc.) into vectors. Then compile these vectors into matrices/dataframes/lists with labels. Your end goal is to have one variable that, when printed, shows you every statistic for every variable.
 
+means <- c(mean.ex, mean.fl, mean.ab, mean.ad, mean.tc, mean.tl, mean.bb, mean.dbk, mean.bib, mean.ir, mean.er)
 
+medians <- c(median.ex, median.fl, median.ab, median.ad, median.tc, median.tl, median.bb, median.dbk, median.bib, median.ir, median.er)
 
+ranges <- c(range.ex, range.fl, range.ab, range.ad, range.tc, range.tl, range.bb, range.bib, range.ir, range.er)
 
 # Bonus:
 
