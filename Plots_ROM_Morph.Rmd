@@ -36,4 +36,14 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 rom.dat <- read.csv(file.choose())
 morph.dat <- read.csv(file.choose())
 ```
+install.packages("car")
+library(car)
+qqPlot(rom.dat$Extension)
+
+boxplot(rom.dat$Extension, rom.dat$Flexion, rom.dat$Adduction, names = c("Extension", "Flexion", "Adduction"))
+
+plot(rom.dat$Abduction, morph.dat$NeckLength)
+
+
+
 
