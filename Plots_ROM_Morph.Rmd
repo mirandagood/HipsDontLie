@@ -38,12 +38,15 @@ morph.dat <- read.csv(file.choose())
 ```
 install.packages("car")
 library(car)
-qqPlot(rom.dat$Extension)
+
 
 boxplot(rom.dat$Extension, rom.dat$Flexion, rom.dat$Adduction, names = c("Extension", "Flexion", "Adduction"))
 
 plot(rom.dat$Abduction, morph.dat$NeckLength)
 
-
-
+par(mfrow = c(1,2))
+qqPlot(rom.dat$Extension)
+title("Extension")
+qqPlot(morph.dat$PelvicBreadth)
+title("Pelvic Breadth")
 
