@@ -35,6 +35,7 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 ```{r}
 rom.dat <- read.csv(file.choose())
 morph.dat <- read.csv(file.choose())
+rom_mg.dat <- read.csv(file.choose())
 ```
 install.packages("car")
 library(car)
