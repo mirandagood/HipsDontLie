@@ -35,7 +35,7 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 ```{r}
 rom.dat <- read.csv(file.choose())
 morph.dat <- read.csv(file.choose())
-rom_mg.dat <- read.csv(file.choose())
+
 ```
 install.packages("car")
 library(car)
@@ -50,4 +50,45 @@ qqPlot(rom.dat$Extension)
 title("Extension")
 qqPlot(morph.dat$PelvicBreadth)
 title("Pelvic Breadth")
+
+#graphing with full Primate data
+morph_mg.dat <- read.csv(file.choose())
+```{r}
+boxplot(morph_mg.dat$femur, morph_mg.dat$neck, names = c("Femur", "Neck"))
+```
+
+
+
+
+```{r}
+plot(morph_mg.dat$femur, morph_mg.dat$neck, xlab = "Femur length", ylab = "Neck length", col = c("purple"), pch = 0)
+title("Silly Scatterplot")
+```
+```{r}
+plot(morph_mg.dat$NSA, xlab = "NSA", morph_mg.dat$FTA, ylab = "FTA", col = c("green"))
+title("NSA vs FTA")
+```
+
+
+
+```{r}
+plot(morph_mg.dat$pelvic, xlab = "Pelvic Breadth", morph_mg.dat$abduction, ylab = "Abduction (in degrees)", col = c("red"), pch = 7 )
+title("Goofy Graph")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
