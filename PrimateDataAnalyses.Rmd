@@ -39,14 +39,28 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 # 1. Import the full primate dataset from GitHub (PrimateMorphROMData_Full.csv):
 ```{r}
-pri.dat <- 
+pri.dat <- read.csv(file.choose()) 
 ```
 
 
 # 2. Descriptive statistics: Calculate the means and standard deviations (SD) for each morphology and ROM variable in your dataset. Assign each mean and SD to a new variable!
 # Tip: Use the na.rm=TRUE argument in your funtions if dealing with NAs. Ex: mean(x, na.rm=TRUE)
 ```{r}
-
+mean.femur <- mean(pri.dat$FemurHead)
+#23
+mean.NSA <- mean(pri.dat$NSA, na.rm = TRUE)
+#110.66
+mean.neck <- mean(pri.dat$Neck, na.rm = TRUE)
+#23.87
+mean.L2 <- mean(pri.dat$L2, na.rm = TRUE)
+#195.99
+mean.L4 <- mean(pri.dat$L4, na.rm = TRUE)
+#20.52
+mean.FTA <- mean(pri.dat$FTA, na.rm = TRUE)
+#72.75
+mean.PS <- mean(pri.dat$PS, na.rm = TRUE)
+#314.21
+mean.
 ```
 
 
