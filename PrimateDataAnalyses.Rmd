@@ -60,7 +60,26 @@ mean.FTA <- mean(pri.dat$FTA, na.rm = TRUE)
 #72.75
 mean.PS <- mean(pri.dat$PS, na.rm = TRUE)
 #314.21
-mean.
+mean.PI <- mean(pri.dat$PI, na.rm = TRUE)
+#198.45
+mean.AS <- mean(pri.dat$AS, na.rm = TRUE)
+#334.72
+mean.AI <- mean(pri.dat$AI, na.rm = TRUE)
+#304
+mean.tot <- mean(pri.dat$TotalArea, na.rm = TRUE)
+#1257.79
+mean.SUP <- mean(pri.dat$SUP, na.rm = TRUE)
+#107.54
+mean.ANT <- mean(pri.dat$ANT, na.rm = TRUE)
+#100.5
+mean.acet <- mean(pri.dat$AcetabDiameter, na.rm = TRUE)
+#26.13
+mean.pel <- mean(pri.dat$PelvicBreadth, na.rm = TRUE)
+#49.31
+mean.abd <- mean(pri.dat$Abduction, na.rm = TRUE)
+#49.31
+mean.abdk <- mean(pri.dat$AbductedKnee, na.rm = TRUE)
+#215.3
 ```
 
 
@@ -72,6 +91,36 @@ mean.
 
 
 # 4. Graphing: Create scatterplots (with the plots() function) with Abduction (an ROM variable) as the y variable (dependent variable) and morphology variables (Femur Head, NSA, Neck, etc.) as the x variable (independent variable). Make sure to include axis labels, titles, and appropriate colors.
+```{r}
+femur_scat <- plot(pri.dat$FemurHead,  pri.dat$Abduction, xlab = "Femur Head", ylab = "Abduction")
+```
+```{r}
+nsa_scat <- plot(pri.dat$NSA, pri.dat$Abduction, xlab = "NSA", ylab = "Abduction")
+```
+```{r}
+neck_scat <- plot(pri.dat$Neck, pri.dat$Abduction, xlab = "Neck", ylab = "Abduction")
+```
+```{r}
+L2_scat <- plot(pri.dat$L2, pri.dat$Abduction, xlab = "L2", ylab = "Abduction")
+```
+```{r}
+L4_scat <- plot(pri.dat$L4, pri.dat$Abduction, xlab = "L4", ylab = "Abduction")
+```
+```{r}
+FTA_scat <- plot(pri.dat$FTA, pri.dat$Abduction, xlab = "FTA", ylab = "Abduction")
+```
+```{r}
+PS_scat <- plot(pri.dat$PS, pri.dat$Abduction, xlab = "PS", ylab = "Abduction")
+```
+```{r}
+PI_scat <- plot(pri.dat$PI, pri.dat$Abduction, xlab = "PI", ylab = "Abduction")
+```
+```{r}
+AS_scat <- plot(pri.dat$AS, pri.dat$Abduction, xlab = "AS", ylab = "Abduction")
+```
+```{r}
+AI_scat <- plot(pri.dat$AI, pri.dat$Abduction, xlab = "AI", ylab = "Abduction")
+```
 ```{r}
 
 ```
