@@ -77,16 +77,62 @@ pri.dat
 cor(pri.dat$FemurHead, pri.dat$Abduction, method = "spearman", use = "complete.obs") # rho = 0.1932215
 
 # Your turn:
+cor(pri.dat$NSA, pri.dat$Abduction, method = "spearman", use = "complete.obs") 
+# 0.6446429
+
+cor(pri.dat$Neck, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+# 0.2689705
+
+cor(pri.dat$L2, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+# 0.07410483
+
+cor(pri.dat$L4, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+# 0.06644697
+
+cor(pri.dat$FTA, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.65894
+
+cor(pri.dat$PS, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+# 0.0765416
+
+cor(pri.dat$PI, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.2075011
+
+cor(pri.dat$AS, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+# 0.02926459
+
+cor(pri.dat$AI, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+#0.1154812
+
+cor(pri.dat$TotalArea, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+# 0.2376986
+
+cor(pri.dat$SUP, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+# -0.5079504
+
+cor(pri.dat$ANT, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+# -0.1153529
+
+cor(pri.dat$AcetabDiameter, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+# 0.2324671
+
+cor(pri.dat$PelvicBreadth, pri.dat$Abduction, method = "spearman", use = "complete.obs")
+# 0.1975809
 
 ```
 
 # 3. List which morphology variables are MOST STRONGLY correlated to your ROM variable. Specify if these are positive or negative correlations.
 ```{r}
+#NSA, positive correlation, 0.6446429
+#FTA, positive correlation, 0.65894
+#SUP, negative correlation, -0.5079504
 
 ```
 
 # 4. What do your results mean in real life? What have we learned about the relationships between morphologies and range of motion in primate hips? Interpret your correlation coefficients from above with words.
 ```{r}
+# This means that the Neck Shaft Angle and the Fobia Trochanteric Angle primate bone morphologies have a close relationship to abduction, which is a primate range of motion measurement. So, primates with bigger NSA and FTA angles are more abducted. SUP is negatively correlated with Abduction, so as abduction increases, SUP decreases. 
+
 
 ```
 
